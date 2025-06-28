@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salon Appointment Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #a957e8ac;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 480px;
+            margin: 40px auto;
+            background: #47a0ac;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        h2 {
+            text-align: center;
+            color: #5a3e85;
+            margin-bottom: 24px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 18px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: #fafbfc;
+        }
+        input[type="file"] {
+            padding: 6px 0;
+            background: none;
+        }
+        .payment-options {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+        .payment-options label {
+            font-weight: 400;
+            color: #444;
+        }
+        .btn {
+            width: 100%;
+            background: linear-gradient(90deg, #7f53ac 0%, #647dee 100%);
+            color: #fff;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #647dee 0%, #7f53ac 100%);
+        }
+        .upload-section {
+            margin-bottom: 24px;
+        }
+        .note {
+            font-size: 0.95em;
+            color: #888;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book Your Salon Appointment</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="haircut">Haircut</option>
+                <option value="braids">Braids</option>
+                <option value="coloring">Coloring</option>
+                <option value="styling">Styling</option>
+                <option value="other">Other</option>
+            </select>
+
+            
+            </div>
+
+            <div class="upload-section">
+                <label for="referencePic">Upload Reference Picture</label>
+                <span class="note">Show us what style you want (optional)</span>
+                <input type="file" id="referencePic" name="referencePic" accept="image/*">
+            </div>
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Anything else we should know?"></textarea>
+
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = encodeURIComponent(document.getElementById('name').value);
+        const phone = encodeURIComponent(document.getElementById('phone').value);
+        const date = encodeURIComponent(document.getElementById('date').value);
+        const time = encodeURIComponent(document.getElementById('time').value);
+        const service = encodeURIComponent(document.getElementById('service').value);
+        const payment = encodeURIComponent(document.querySelector('input[name="payment"]:checked')?.value || '');
+        const notes = encodeURIComponent(document.getElementById('notes').value);
+
+        let message = `Salon Appointment Booking%0AFull Name: ${name}%0APhone: ${phone}%0AAppointment Date: ${date}%0ATime: ${time}%0AService: ${service}%0APayment Method: ${payment}%0AAdditional Notes: ${notes}`;
+
+        // Replace with your WhatsApp number (in international format, e.g. 27831234567 for South Africa)
+        const whatsappNumber = "27616622874";
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    });
+    </script>
+    </div>
+</body>
+</html>
+<style>
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 18px 6px;
+        margin: 16px 2vw;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    input, select, textarea {
+        font-size: 0.98rem;
+        padding: 9px 8px;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+</style>

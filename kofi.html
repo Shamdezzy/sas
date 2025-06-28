@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon</title>
+</head>
+<body style="background: linear-gradient(120deg, #fff0f6 0%, #f3c6e2 60%, #e75480 100%); min-height: 100vh;"></body>
+    <img src="images/OIP.jpg" alt="Salon Logo" class="logo">
+    <style>
+        .logo {
+            border-radius: 18px;
+            width: 100vw;
+            max-width: 100vw;
+            height: 180px;
+            object-fit: cover;
+            margin: 0 auto 16px auto;
+            display: block;
+            box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            border: 6px solid #fff;
+            background: linear-gradient(135deg, #f3c6e2 0%, #e75480 100%);
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            position: relative;
+        }
+        .logo {
+            display: block;
+            margin: 32px auto 16px auto;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            border: 6px solid #fff;
+            background: linear-gradient(135deg, #f3c6e2 0%, #e75480 100%);
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            position: relative;
+        }
+        .logo::after {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; right: 0; bottom: 0;
+            border-radius: 50%;
+            box-shadow: 0 0 0 8px rgba(231,84,128,0.08);
+            pointer-events: none;
+        }
+        .logo:hover {
+            transform: scale(1.06) rotate(-2deg);
+            box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            border-color: #f3c6e2;
+        }
+    </style>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><span style="</nav>margin-right:8px;">🌸</span>Home</a></li>
+            <li><a href="about.html"><span style="margin-right:8px;">💖</span>About</a></li>
+            <li><a href="services.html"><span style="margin-right:8px;">💅</span>Services</a></li>
+            <li><a href="contact.html"><span style="margin-right:8px;">🌷</span>Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        nav ul {
+            gap: 24px;
+        }
+        nav a {
+            background: rgba(255,255,255,0.10);
+            box-shadow: 0 2px 8px rgba(231,84,128,0.08);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            opacity: 0.12;
+            z-index: 0;
+            transition: opacity 0.2s;
+        }
+        nav a:hover, nav a:focus {
+            border-color: #fff;
+            background: #fff;
+            color: #e75480;
+            box-shadow: 0 4px 16px rgba(231,84,128,0.18);
+        }
+        nav a span {
+            font-size: 1.2em;
+            vertical-align: left;
+        }
+    </style>
+    
+    <style>
+        nav {
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 0;
+            margin: 24px 0 32px 0;
+            width: 90vw;
+            max-width: 90vw;
+            left: 50%;
+            right: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            padding: 0 16px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            gap: 32px;
+        }
+        nav li {
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            display: block;
+            padding: 14px 24px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            letter-spacing: 1px;
+        }
+        nav a:hover, nav a:focus {
+            background: #fff;
+            color: #e75480;
+            box-shadow: 0 2px 12px rgba(231,84,128,0.12);
+        }
+    </style>
+    <h1>KO-FI SALON</h1>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #e75480;
+            letter-spacing: 2px;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            margin: 32px 0 16px 0;
+            text-shadow: 0 2px 12px rgba(231,84,128,0.12);
+            font-weight: 800;
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+
+    <h1>Experience Beauty at KO-FI SALON</h1>
+    <h2>Unleash Your Unique Beauty</h2>
+    <p>We are a small business that relies on the support of our community. If you enjoy our services and would like to help us continue providing quality hair styling, please consider supporting us on Ko-fi Salon.</p>
+    <p>Your contributions help us cover costs and improve our services. Thank you for your support!</p>
+    <h2>LETS MAKE YOU MORE BEATIFUL</h2>
+    <P>Choose The Service That Best Suits you</P>
+    <style>
+        p, P {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            font-size: 1.15rem;
+            color: #444;
+            line-height: 1.7;
+            text-align: center;
+            margin: 12px 0;
+        }
+    </style>
+
+    <h2>Our Services</h2>
+    <style>
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            background: linear-gradient(90deg, #e75480 0%, #f3c6e2 100%);
+            padding: 12px 0;
+            margin: 28px 0 12px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(231,84,128,0.10);
+            letter-spacing: 1.5px;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(231,84,128,0.10);
+        }
+    </style>
+    <style>
+        figcaption {
+            font-family: 'Times New Roman', Times, serif !important;
+            border: 2px solid #e75480;
+            border-radius: 10px;
+            padding: 6px 0;
+            margin-top: 8px;
+            background: rgba(243,198,226,0.12);
+            box-shadow: 0 2px 8px rgba(231,84,128,0.08);
+        }
+        .service-image {
+            border: 2px solid #e75480;
+            border-radius: 2px;
+            box-shadow: 0 4px 2px rgba(231,84,128,0.18), 0 1.5px 6px rgba(0,0,0,0.08);
+            transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+        }
+        .service-image:hover {
+            border-color: #212021;
+            box-shadow: 0 8px 32px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            transform: scale(20.25s) rotate(-2deg);
+        }
+    </style>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0; margin-top: 10px;">
+        <figure style="display: inline-block; margin: 12px;">
+            <img src="images/OIP (1).jpg" alt="Hair Styling" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Hair Styling</figcaption>
+        </figure>
+        <figure style="display: inli1e-block; margin: 12px;">
+            <img src="images/OIP (4).jpg" alt="Hair Cutting" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Hair Coloring</figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 12px;">
+            <img src="images/OIP (3).jpg" alt="MakeUp" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Hair Treatment</figcaption>
+        </figure>
+        
+        <figure style="display: inline-block; margin: 12px;">
+            <img src="images/OIP (2).jpg" alt="Hair Cutting" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Hair Cutting</figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 12px;">
+            <img src="images/pedicure-pictures-2qukz2q6yiw1nc82.jpg" alt="Hair Extensions" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Pedicure</figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 12px;">
+            <img src="images/straight-and-sleek-frontal-weave.jpg" alt="Manicure" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Frontal Weave</figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 12px;">
+            <img src="images/lashes.jpg" alt="Lashes" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Lashes</figcaption>
+        </figure>
+        <figure style="display: inline</figure>e-block; margin: 12px;">
+            <img src="images/eye.jpg" alt="Eyebrow" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Eyebrow</figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 12px;">
+            <img src="images/gel n.jpg" alt="Manicure" class="service-image" style="width: 120px; height: 220px;">
+            <figcaption style="text-align: center; font-family: 'Segoe UI', 'Arial', sans-serif; color: #e75480; font-weight: 600; margin-top: 8px;">Manicure</figcaption>
+        </figure>
+
+        
+    </div>
+    
+    <style>
+        .service-image {
+            width: 420px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+            transition: transform cubic-bezier(1, 0, 0, 1), box-shadow 0.3s;
+            border: 10spx solid #c55299;
+        }
+        .service-image:hover {
+            transform: scale(1.07) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            border-color: #e75480;
+        }
+    </style>
+    <footer>
+        <p>&copy; 2023 Ko-fi Salon. All rights reserved.</p>
+        <p>Follow us on social media for updates and promotions!</p>
+        <style>
+            footer {
+                background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+                color: #fff;
+                text-align: center;
+                padding: 32px 0 20px 0;
+                margin-top: 48px;
+                border-radius: 18px 18px 0 0;
+                box-shadow: 0 -2px 16px rgba(231,84,128,0.10);
+                font-family: 'Segoe UI', 'Arial', sans-serif;
+            }
+            footer p {
+                margin: 8px 0;
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+                color: #fff;
+                text-shadow: 0 1px 6px rgba(231,84,128,0.10);
+            }
+            .footer-socials {
+                margin: 18px 0 0 0;
+                display: flex;
+                justify-content: center;
+                gap: 28px;
+            }
+            .footer-socials a {
+                display: inline-block;
+                color: #fff;
+                background: rgba(231,84,128,0.18);
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                font-size: 1.5rem;
+                transition: background 0.2s, color 0.2s, transform 0.2s;
+                text-align: center;
+                text-decoration: none;
+            }
+            .footer-socials a:hover {
+                background: #fff;
+                color: #e75480;
+                transform: scale(1.12) rotate(-5deg);
+                box-shadow: 0 2px 12px rgba(231,84,128,0.12);
+            }
+        </style>
+        
+
+    
+</body>
+</html>
+<style>
+    @media (max-width: 900px) {
+        .service-image {
+            width: 220px;
+            height: 150px;
+        }
+        nav ul {
+            gap: 16px;
+        }
+        nav a {
+            padding: 10px 14px;
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 600px) {
+        .logo {
+            width: 90px;
+            height: 90px;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            padding: 8px 0;
+        }
+        .service-image {
+            width: 98vw;
+            max-width: 320px;
+            height: 120px;
+        }
+        nav {
+            padding: 0 2vw;
+            width: 98vw;
+            max-width: 98vw;
+        }
+        nav ul {
+            flex-direction: column;
+            gap: 8px;
+        }
+        nav a {
+            padding: 10px 8px;
+            font-size: 1rem;
+            border-radius: 6px;
+        }
+        footer {
+            padding: 18px 0 10px 0;
+            font-size: 0.95rem;
+        }
+        .footer-socials {
+            gap: 14px;
+        }
+        .footer-socials a {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 1.1rem;
+        }
+    }
+    @media (max-width: 400px) {
+        .service-image {
+            width: 92vw;
+            height: 80px;
+        }
+        h1, h2 {
+            font-size: 1rem;
+        }
+    }
+</style>
+</script>
+<style>
+/* Force horizontal nav bar on all screen sizes */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: row !important;
+        gap: 8px;
+        justify-content: center;
+    }
+}
+</style>

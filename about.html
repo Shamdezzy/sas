@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon</title>
+</head>
+<body>
+    <header>
+        <img src="images/OIP.jpg" alt="Salon Logo" class="logo">
+        <style>
+            .logo {
+                border-radius: 18px;
+                width: 100vw;
+                max-width: 100vw;
+                height: 180px;
+                object-fit: cover;
+                margin: 0 auto 16px auto;
+                display: block;
+                box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+                border: 6px solid #fff;
+                background: linear-gradient(135deg, #f3c6e2 0%, #e75480 100%);
+                transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+                position: relative;
+            }
+            .logo {
+                display: block;
+                margin: 32px auto 16px auto;
+                width: 160px;
+                height: 160px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+                border: 6px solid #fff;
+                background: linear-gradient(135deg, #f3c6e2 0%, #e75480 100%);
+                transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+                position: relative;
+            }
+            .logo::after {
+                content: "";
+                position: absolute;
+                left: 0; top: 0; right: 0; bottom: 0;
+                border-radius: 50%;
+                box-shadow: 0 0 0 8px rgba(231,84,128,0.08);
+                pointer-events: none;
+            }
+            .logo:hover {
+                transform: scale(1.06) rotate(-2deg);
+                box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+                border-color: #f3c6e2;
+            }
+        </style> 
+        <nav>
+            <ul style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 32px; margin: 0; padding: 0;">
+            <li><a href="index.html"><span style="margin-right:8px;">🌸</span>Home</a></li>
+            <li><a href="about.html"><span style="margin-right:8px;">💖</span>About</a></li>
+            <li><a href="services.html"><span style="margin-right:8px;">💅</span>Services</a></li>
+            <li><a href="contact.html"><span style="margin-right:8px;">🌷</span>Contact</a></li>
+            </ul>
+        </nav>
+        <style>
+        nav ul {
+            gap: 24px;
+        }
+        nav a {
+            background: rgba(255,255,255,0.10);
+            box-shadow: 0 2px 8px rgba(231,84,128,0.08);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            opacity: 0.12;
+            z-index: 0;
+            transition: opacity 0.2s;
+        }
+        nav a:hover, nav a:focus {
+            border-color: #fff;
+            background: #fff;
+            color: #e75480;
+            box-shadow: 0 4px 16px rgba(231,84,128,0.18);
+        }
+        nav a span {
+            font-size: 1.2em;
+            vertical-align: left;
+        }
+    </style>
+    
+    <style>
+        nav {
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 0;
+            margin: 24px 0 32px 0;
+            width: 90vw;
+            max-width: 90vw;
+            left: 50%;
+            right: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            padding: 0 16px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            gap: 32px;
+        }
+        nav li {
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            display: block;
+            padding: 14px 24px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            letter-spacing: 1px;
+        }
+        nav a:hover, nav a:focus {
+            background: #fff;
+            color: #e75480;
+            box-shadow: 0 2px 12px rgba(231,84,128,0.12);
+        }
+    </style>
+    </header>
+    <main>
+        <h1 style="font-family: 'Pacifico', cursive, 'Segoe UI', Arial, sans-serif;">ABOUT US</h1>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <section class="about-content" style="background: linear-gradient(120deg, #fff0f6 0%, #f3c6e2 100%); border-radius: 24px; box-shadow: 0 4px 24px rgba(231,84,128,0.10); padding: 32px 0;">
+
+            <p>
+                We are dedicated to providing you with the best beauty and wellness services. Our team of experienced professionals is here to help you look and feel your best.
+            </p>
+            <p>
+                At our salon, we offer a wide range of services including <span style="color:#e75480; font-weight:500;">haircuts</span>, <span style="color:#e75480; font-weight:500;">coloring</span>, <span style="color:#e75480; font-weight:500;">styling</span>, <span style="color:#e75480; font-weight:500;">manicures</span>, <span style="color:#e75480; font-weight:500;">pedicures</span>, <span style="color:#e75480; font-weight:500;">facials</span>, and more. We use only the <b>highest quality products</b> to ensure that you receive the best care possible.
+            </p>
+            <p>
+                Our mission is to create a <span style="color:#e75480; font-weight:500;">relaxing and welcoming environment</span> where you can escape the stresses of everyday life. We believe that <b>self-care</b> is essential for overall well-being, and we are here to support you on your journey to looking and feeling fabulous.
+            </p>
+            <p style="font-size:1.1rem; font-style:italic; color:#b23a5a; text-align:center; margin-top:18px;">
+                Thank you for choosing our salon.<br>
+                <span style="font-weight:600;">We look forward to serving you and helping you achieve your beauty goals!</span>
+            </p>
+        </section>
+    </main>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            /* Lovely, superb, multi-layered pastel gradient background */
+            background: linear-gradient(135deg, #ffe1f0 0%, #f3c6e2 35%, #e1e8ff 70%, #e75480 100%);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255,255,255,0.7);
+            box-shadow: 0 2px 12px rgba(231,84,128,0.07);
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            padding-bottom: 16px;
+        }
+        .logo {
+            display: block;
+            margin: 32px auto 12px auto;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 24px rgba(231,84,128,0.18), 0 1.5px 6px rgba(0,0,0,0.08);
+            border: 4px solid #e75480;
+            background: #fff;
+            transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+        }
+        .logo:hover {
+            transform: scale(1.06) rotate(-2deg);
+            box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            border-color: #f3c6e2;
+        }
+        nav {
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 24px;
+            margin: 16px 0 0 0;
+            width: 90vw;
+            max-width: 600px;
+            position: relative;
+            padding: 0 16px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 18px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.08rem;
+            letter-spacing: 0.5px;
+            padding: 8px 18px;
+            border-radius: 18px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+        nav a.active,
+        nav a:hover {
+            color: #e75480;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(231,84,128,0.10);
+        }
+        main {
+            max-width: 800px;
+            margin: 32px auto 0 auto;
+            padding: 0 16px 32px 16px;
+        }
+        h1 {
+            text-align: center;
+            color: #e75480;
+            margin-top: 0;
+            font-size: 2.7rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(231,84,128,0.08);
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .about-content p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            background: rgba(255,255,255,0.92);
+            padding: 18px 28px;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(231,84,128,0.06);
+        }
+        @media (max-width: 700px) {
+            nav {
+                max-width: 98vw;
+                width: 98vw;
+                padding: 0 4px;
+            }
+            main {
+                padding: 0 4vw 24px 4vw;
+            }
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 8px;
+            }
+            nav li {
+                margin: 8px 0;
+            }
+            .about-content p {
+                padding: 12px 8px;
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .logo {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</body>
+<script>
+    // Ensure viewport is set for responsive design (already present in meta tag)
+    // Optionally, you can add a small script to enhance mobile navigation if needed
+    // For now, the CSS @media queries handle responsiveness
+</script>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon</title>
+</head>
+<body style="background: linear-gradient(120deg, #fff0f6 0%, #f3c6e2 60%, #e75480 100%); min-height: 100vh;"></body>
+    <img src="images/OIP.jpg" alt="Salon Logo" class="logo">
+    <style>
+        .logo {
+            border-radius: 18px;
+            width: 100vw;
+            max-width: 100vw;
+            height: 180px;
+            object-fit: cover;
+            margin: 0 auto 16px auto;
+            display: block;
+            box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            border: 6px solid #fff;
+            background: linear-gradient(135deg, #f3c6e2 0%, #e75480 100%);
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            position: relative;
+        }
+        .logo {
+            display: block;
+            margin: 32px auto 16px auto;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            border: 6px solid #fff;
+            background: linear-gradient(135deg, #f3c6e2 0%, #e75480 100%);
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            position: relative;
+        }
+        .logo::after {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; right: 0; bottom: 0;
+            border-radius: 50%;
+            box-shadow: 0 0 0 8px rgba(231,84,128,0.08);
+            pointer-events: none;
+        }
+        .logo:hover {
+            transform: scale(1.06) rotate(-2deg);
+            box-shadow: 0 8px 36px rgba(231,84,128,0.25), 0 2px 12px rgba(0,0,0,0.12);
+            border-color: #f3c6e2;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span style="</nav>margin-right:8px;">🌸</span>Home</a></li>
+            <li><a href="about.html"><span style="margin-right:8px;">💖</span>About</a></li>
+            <li><a href="services.html"><span style="margin-right:8px;">💅</span>Services</a></li>
+            <li><a href="contact.html"><span style="margin-right:8px;">🌷</span>Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        nav ul {
+            gap: 2px;
+            flex-direction: row !important;
+            justify-content: left !important;
+            align-items: center !important;
+        }
+        nav a {
+            background: rgba(255,255,255,0.10);
+            box-shadow: 0 2px 8px rgba(231,84,128,0.08);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            opacity: 0.12;
+            z-index: 0;
+            transition: opacity 0.2s;
+        }
+        nav a:hover, nav a:focus {
+            border-color: #fff;
+            background: #fff;
+            color: #e75480;
+            box-shadow: 0 4px 16px rgba(231,84,128,0.18);
+        }
+        nav a span {
+            font-size: 1.2em;
+            vertical-align: left;
+        }
+    </style>
+    
+    <style>
+        nav {
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 0;
+            margin: 10px 0 32px 0;
+            width: 90vw;
+            max-width: 90vw;
+            left: 10%;
+            right: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            padding: 0 16px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            margin: 0;
+            padding: 0;
+            gap: 0px;
+        }
+        nav li {
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            display: block;
+            padding: 14px 24px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            letter-spacing: 1px;
+        }
+        nav a:hover, nav a:focus {
+            background: #fff;
+            color: #e75480;
+            box-shadow: 0 2px 12px rgba(231,84,128,0.12);
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #fff0f6 0%, #f3c6e2 100%);
+            margin: 5px;
+            padding: 5px;
+            color: #333;
+        }
+        .logo {
+            display: block;
+            margin: 32px auto 16px auto;
+            width: 120px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px rgba(231,84,128,0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #e75480;
+            margin-top: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        {
+            color: #b83260;
+            margin-top: 32px;
+            margin-bottom: 8px;
+            font-size: 1.5rem;
+            border-left: 5px solid #e75480;
+            padding-left: 5px;
+            background: #fff6fa;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+        {
+            background: #d55db7;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(231,84,128,0.07);
+            padding: 16px 32px;
+            margin: 0 auto 24px auto;
+            width: 80%;
+            max-width: 100vw;
+            font-size: 1.1rem;
+            box-sizing: border-box;
+        }
+        li {
+            margin: 8px 0;
+            padding-left: 8px;
+            position: relative;
+        }
+        li::before {
+            content: "✦";
+            color: #e75480;
+            position: absolute;
+            left: -18px;
+            font-size: 1rem;
+        }
+        p {
+            max-width: 700px;
+            margin: 16px auto;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            background: #b85280;
+            padding: 12px 24px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(231,84,128,0.04);
+        }
+        nav {
+            margin-bottom: 40px;
+        }
+        nav ul {
+            padding: 0;
+        }
+        nav li {
+            margin: 0 24px;
+        }
+        nav a {
+            color: #611616;
+            background: #e75480;
+            padding: 10px 22px;
+            border-radius: 24px;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(231,84,128,0.10);
+            font-size: 1.1rem;
+        }
+        nav a:hover, nav a:focus {
+            background: #af446a;
+            box-shadow: 0 4px 16px rgba(231,84,128,0.18);
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            ul {
+                padding: 12px 10px;
+                max-width: 100vw;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin: 8px 0;
+            }
+            
+        }
+    </style>
+
+    <h1>Our Services</h1>
+    <p>At our salon, we offer a wide range of services to cater to all your beauty and wellness needs. Our experienced professionals are dedicated to providing you with the best care possible.</p>
+
+    <h2 style="color: #e75480; font-size: 2rem; margin-top: 40px; margin-bottom: 16px; letter-spacing: 1px; background: #fff6fa; display: inline-block; padding: 8px 32px; border-radius: 24px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); border-left: 6px solid #e75480; text-align: center; margin-left: 50%; transform: translateX(-50%);">Hair Services</h2>
+    <a href="hairservices.html">Explore Our Hair Services</a>
+    <div style="display: flex; justify-content: center; gap: 32px; margin: 24px 0;">
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/cut.jpg" alt="Haircut" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Haircuts</h3>
+            <p style="font-size: 0.98rem; color: #161616; margin: 0;">Precision cuts for all hair types and styles.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/coloring.jpg" alt="Coloring" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Coloring</h3>
+            <p style="font-size: 0.98rem; color: #181617; margin: 0;">Vibrant colors, highlights, balayage, and more.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/styling.jpg" alt="Styling" style="width: 200px; height: 200px; border-radius: 100%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 10px 0 8px 0; font-size: 1.2rem;">Styling</h3>
+            <p style="font-size: 0.98rem; color: #1c1a1a; margin: 0;">Blowouts, updos, and special occasion styling.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/ex.jpg" alt="Extensions" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Extensions</h3>
+            <p style="font-size: 0.98rem; color: #181718; margin: 0;">Lengthen and volumize with premium hair extensions.</p>
+        </div>
+    
+    </div>
+   
+    <style>
+        a {
+            color: #e75480;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s, box-shadow 0.2s;
+            border-bottom: 2px solid transparent;
+            padding: 2px 0;
+        }
+        a:hover, a:focus {
+            color: #b83260;
+            border-bottom: 2px solid #e75480;
+            box-shadow: 0 2px 8px rgba(231,84,128,0.10);
+            background: #fff0f6;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        ul li a {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 16px;
+            background: linear-gradient(90deg, #fff6fa 0%, #f3c6e2 100%);
+            margin-left: -8px;
+        }
+        ul li a:hover, ul li a:focus {
+            background: linear-gradient(90deg, #f3c6e2 0%, #fff6fa 100%);
+            color: #fff;
+            border-bottom: 2px solid #b83260;
+        }
+    </style>
+    <h2 style="color: #e75480; font-size: 2rem; margin-top: 40px; margin-bottom: 16px; letter-spacing: 1px; background: #fff6fa; display: inline-block; padding: 8px 32px; border-radius: 24px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); border-left: 6px solid #e75480; text-align: center; margin-left: 50%; transform: translateX(-50%);">Nail Services</h2>
+    <a href="nailservices.html">Explore Our Nail Services</a>
+
+    <div style="display: flex; justify-content: center; gap: 32px; margin: 24px 0;">
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/ped.jpg" alt="Manicure" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Manicures</h3>
+            <p style="font-size: 0.98rem; color: #181617; margin: 0;">Classic, gel, and spa manicures for healthy, beautiful nails.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/fit.jpg" alt="Pedicure" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Pedicures</h3>
+            <p style="font-size: 0.98rem; color: #100f0f; margin: 0;">Relaxing treatments for soft, smooth, and polished feet.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/art.jpg" alt="Nail Art" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Nail Art</h3>
+            <p style="font-size: 0.98rem; color: #1f1d1e; margin: 0;">Creative designs and custom art for unique, stylish nails.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/gel.jpg" alt="Gel Nails" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Gel Nails</h3>
+            <p style="font-size: 0.98rem; color: #181718; margin: 0;">Long-lasting gel polish for a flawless, glossy finish.</p>
+        </div>
+    </div>
+    
+    <h2 style="color: #e75480; font-size: 2rem; margin-top: 40px; margin-bottom: 16px; letter-spacing: 1px; background: #fff6fa; display: inline-block; padding: 8px 32px; border-radius: 24px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); border-left: 6px solid #e75480; text-align: center; margin-left: 50%; transform: translateX(-50%);">Makeup Services</h2>
+    <a href="makeupservices.html">Explore Our Makeup Services</a>
+    <div style="display: flex; justify-content: center; gap: 32px; margin: 24px 0;">
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/brid.jpg" alt="Bridal Makeup" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Bridal Makeup</h3>
+            <p style="font-size: 0.98rem; color: #252323; margin: 0;">Flawless, long-lasting looks for your special day.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/party.jpg" alt="Party Makeup" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Party Makeup</h3>
+            <p style="font-size: 0.98rem; color: #2a2728; margin: 0;">Glamorous styles for any celebration or event.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/less.jpg" alt="Makeup Lessons" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #e75480; margin: 8px 0 4px 0; font-size: 1.2rem;">Makeup Lessons</h3>
+            <p style="font-size: 0.98rem; color: #201e1f; margin: 0;">Personalized tutorials to enhance your skills.</p>
+        </div>
+        <div style="background: #fff6fa; border-radius: 16px; box-shadow: 0 2px 8px rgba(231,84,128,0.10); padding: 24px 32px; max-width: 260px; text-align: center;">
+            <img src="images/mahwoo.jpg" alt="Special Occasion Makeup" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(231,84,128,0.10);">
+            <h3 style="color: #be798e; margin: 8px 0 4px 0; font-size: 1.2rem;">Special Occasion Makeup</h3>
+            <p style="font-size: 0.98rem; color: #1d1b1c; margin: 0;">Perfect looks for proms, graduations, and more.</p>
+        </div>
+    
+    </div>
+    
+    <p>We also offer customized packages to suit your specific needs. Whether you're preparing for a special occasion or just want to pamper yourself, we have the perfect service for you.</p>
+    <p>Contact us today to book an appointment and experience the best in beauty and wellness services!</p>
+    <style>
+        p {
+            max-width: 100%;
+            width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    </style>
+    <nav>
+
+    </nav>
+    <style>
+        nav {
+            background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 0;
+            margin: 24px 0 32px 0;
+            width: 90vw;
+            max-width: 90vw;
+            left: 50%;
+            right: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            padding: 0 16px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 16px;
+        }
+        nav a {
+            color: #671e1e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+</body>
+</html></div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Make service cards stack on small screens
+    function adjustServiceCards() {
+        const serviceRows = document.querySelectorAll('div[style*="display: flex"][style*="justify-content: center"]');
+        serviceRows.forEach(row => {
+            if (window.innerWidth <= 800) {
+                row.style.flexDirection = "column";
+                row.style.alignItems = "center";
+                row.style.gap = "20px";
+            } else {
+                row.style.flexDirection = "row";
+                row.style.alignItems = "flex-start";
+                row.style.gap = "32px";
+            }
+        });
+    }
+    adjustServiceCards();
+    window.addEventListener('resize', adjustServiceCards);
+});
+</script>
+<style>
+@media (max-width: 900px) {
+    .logo {
+        width: 80px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem !important;
+        padding: 8px 10vw !important;
+    }
+    div[style*="display: flex"][style*="justify-content: center"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+    nav ul {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    nav li {
+        margin: 8px 0 !important;
+    }
+    .service-card, div[style*="background: #fff6fa;"][style*="border-radius: 16px;"] {
+        max-width: 90vw !important;
+        padding: 16px 8vw !important;
+    }
+    p {
+        font-size: 1rem !important;
+        padding: 10px 5vw !important;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding: 0 2vw;
+    }
+    h1 {
+        font-size: 1.1rem !important;
+    }
+    h2 {
+        font-size: 1rem !important;
+        padding: 8px 2vw !important;
+    }
+    nav {
+        padding: 0 2vw !important;
+        width: 98vw !important;
+        max-width: 98vw !important;
+    }
+    .logo {
+        width: 60px !important;
+    }
+    div[style*="display: flex"][style*="justify-content: center"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 16px !important;
+    }
+    .service-card, div[style*="background: #fff6fa;"][style*="border-radius: 16px;"] {
+        max-width: 98vw !important;
+        padding: 12px 2vw !important;
+    }
+    img[alt] {
+        width: 90vw !important;
+        height: auto !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+    }
+}
+</style>
+<footer>
+    <nav>
+        <ul>
+           <li><a href="booking.html"><span style="margin-right:8px;">📅</span>Book Now</a></li>
+
+        </ul>
+    </nav>
+</footer>
+<style>
+footer {
+    margin-top: 48px;
+    padding: 24px 0 0 0;
+    background: none;
+    text-align: center;
+}
+footer nav {
+    background: linear-gradient(90deg, #f3c6e2 0%, #e75480 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 0 0 16px 16px;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 90vw;
+    left: 50%;
+    right: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    padding: 0 16px;
+}
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+}
+footer nav li {
+    margin: 0 24px;
+    padding: 0;
+}
+footer nav a {
+    display: block;
+    padding: 12px 22px;
+    color: #611616;
+    background: #e75480;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 24px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(231,84,128,0.10);
+}
+footer nav a:hover, footer nav a:focus {
+    background: #af446a;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(231,84,128,0.18);
+    text-decoration: underline;
+}
+footer nav a span {
+    font-size: 1.2em;
+    vertical-align: left;
+}
+@media (max-width: 600px) {
+    footer nav ul {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    footer nav li {
+        margin: 8px 0 !important;
+    }
+    footer nav {
+        padding: 0 2vw !important;
+        width: 98vw !important;
+        max-width: 98vw !important;
+    }
+}
+</style>
